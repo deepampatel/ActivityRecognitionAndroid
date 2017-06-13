@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     }
     public String getActivityString(int detectedActivityType) {
         Resources resources = this.getResources();
-        switch(detectedActivityType) {
+        switch (detectedActivityType) {
             case DetectedActivity.IN_VEHICLE:
                 return resources.getString(R.string.in_vehicle);
             case DetectedActivity.ON_BICYCLE:
@@ -81,8 +81,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             default:
                 return resources.getString(R.string.unidentifiable_activity, detectedActivityType);
         }
+    }
 
-    public class ActivityDetectionBroadcastReceiver extends BroadcastReceiver{
+    class ActivityDetectionBroadcastReceiver extends BroadcastReceiver{
 
         @Override
         public void onReceive(Context context, Intent intent) {
