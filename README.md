@@ -1,5 +1,5 @@
 # ActivityRecognitionAndroid
-This App shows user activity using the activity recognition api in android 
+This App shows user activity using the activity recognition api in android.
 This app gives you the prediction of the activites the user is doing its upto us how to use that information.
 
 
